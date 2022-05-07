@@ -1,4 +1,5 @@
 let countEl = document.getElementById("count-el")
+let saveEl = document.getElementById("save-el")
 let count = 0
 
 function increment() {
@@ -18,4 +19,8 @@ function Reset() { count = 0
      countEl.textContent = count
     countEl.style.color = ("black")
      }
+function Save() { 
+    let counts = count + ","
+    saveEl.textContent += counts
 
+}
